@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>People — Hinman Lab</title>
+  <meta name="description" content="The people of the Hinman Lab: principal investigator, graduate students, undergraduates, and alumni.">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Placeholder avatars: if a member's photo file isn't present yet, show a
+    // clean initials tile instead of a broken image. Drop a real photo at
+    // assets/img/people/<file>.jpg (see MAINTAINING.md) and it appears automatically.
+    function ph(t){
+      t = (t || '').toUpperCase();
+      var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">' +
+        '<rect width="300" height="300" fill="#eef1f5"/>' +
+        '<text x="50%" y="50%" dy=".35em" text-anchor="middle" ' +
+        'font-family="system-ui,Arial,sans-serif" font-size="118" font-weight="700" ' +
+        'fill="#13294b">' + t + '</text></svg>';
+      return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    }
+    function avatarFallback(img){ img.onerror = null; img.src = ph(img.dataset.initials); }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/hinmanlablogo.png" alt="Hinman Lab, University of Illinois Urbana-Champaign"></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html" class="active">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">People</span>
+          <h1>The lab</h1>
+          <img src="assets/img/people/lab-photo.jpg" alt="The Hinman Lab group" style="width:100%; height:auto; border-radius:var(--radius); border:1px solid var(--border); margin-top:8px;">
+        </div>
+
+        <!-- Principal Investigator -->
+        <h2>Principal Investigator</h2>
+        <div class="people-grid pi">
+          <div class="person pi-card">
+            <img class="avatar" src="assets/img/people/jake-hinman.jpg" alt="Dr. Jake Hinman" data-initials="JH" onerror="avatarFallback(this)">
+            <div class="pi-info">
+              <p class="name">Dr. Jake Hinman</p>
+              <p class="role">Assistant Professor</p>
+              <p class="role">Department of Psychology</p>
+              <p class="detail">Neuroscience Program</p>
+              <p class="detail">University of Illinois Urbana-Champaign</p>
+              <p class="pi-links"><a href="mailto:jhinman@illinois.edu">Email</a> · <a href="assets/pdf/hinman-cv.pdf">CV</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graduate Students -->
+        <h2 style="margin-top:2em">Graduate Students</h2>
+        <div class="people-grid">
+          <div class="person">
+            <img class="avatar" src="assets/img/people/yadong-dai.jpg" alt="Yadong Dai" data-initials="YD" onerror="avatarFallback(this)">
+            <p class="name">Yadong Dai</p>
+            <p class="role">PhD student</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/md-rashed-al-mahfuz.jpg" alt="Md Rashed Al Mahfuz" data-initials="RM" onerror="avatarFallback(this)">
+            <p class="name">Md Rashed Al Mahfuz</p>
+            <p class="role">PhD student</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/becky-burch.jpg" alt="Becky Burch" data-initials="BB" onerror="avatarFallback(this)">
+            <p class="name">Becky Burch</p>
+            <p class="role">PhD student</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/yiting.jpg" alt="Yiting" data-initials="Y" onerror="avatarFallback(this)">
+            <p class="name">Yiting</p>
+            <p class="role">PhD student</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/yiyan.jpg" alt="Yiyan" data-initials="Y" onerror="avatarFallback(this)">
+            <p class="name">Yiyan</p>
+            <p class="role">M.S. student</p>
+          </div>
+        </div>
+
+        <!-- Undergraduates -->
+        <h2 style="margin-top:2em">Undergraduate Students</h2>
+        <div class="people-grid">
+          <div class="person">
+            <img class="avatar" src="assets/img/people/kaylyn-castillo.jpg" alt="Kaylyn Castillo" data-initials="KC" onerror="avatarFallback(this)">
+            <p class="name">Kaylyn Castillo</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/pavithra-porayath.jpg" alt="Pavithra Porayath" data-initials="PP" onerror="avatarFallback(this)">
+            <p class="name">Pavithra Porayath</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/christopher-rodriguez.jpg" alt="Christopher Rodriguez" data-initials="CR" onerror="avatarFallback(this)">
+            <p class="name">Christopher Rodriguez</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/alek-trojanowski.jpg" alt="Alek Trojanowski" data-initials="AT" onerror="avatarFallback(this)">
+            <p class="name">Alek Trojanowski</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/vikram-bhola.jpg" alt="Vikram Bhola" data-initials="VB" onerror="avatarFallback(this)">
+            <p class="name">Vikram Bhola</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/karolina-glowa.jpg" alt="Karolina Glowa" data-initials="KG" onerror="avatarFallback(this)">
+            <p class="name">Karolina Glowa</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/sujeanne-choi.jpg" alt="SuJeanne Choi" data-initials="SC" onerror="avatarFallback(this)">
+            <p class="name">SuJeanne Choi</p>
+          </div>
+          <div class="person">
+            <img class="avatar" src="assets/img/people/alexander-radev.jpg" alt="Alexander Radev" data-initials="AR" onerror="avatarFallback(this)">
+            <p class="name">Alexander Radev</p>
+          </div>
+        </div>
+
+        <!-- Alumni -->
+        <h2 style="margin-top:2.2em">Alumni</h2>
+        <p class="subhead">Undergraduate researchers</p>
+        <ul class="alumni-list">
+          <li>Benedict Yeoh (2022–2023) — Psychology, Behavioral Neuroscience; now Vanderbilt University</li>
+          <li>Isaiah Franklin (2022–2023) — Neuroscience &amp; Psychology</li>
+          <li>Aadi Shah (2022–2023) — Finance / Psychology minor</li>
+          <li>Julia Walsdorf (2022) — Psychology</li>
+          <li>Alex Seielstad (2022–2024) — Psychology, Behavioral Neuroscience</li>
+          <li>Sarah Nathanson (2022) — Psychology, Behavioral Neuroscience; now Boston University</li>
+          <li>Ben Hardin (2021–2022) — Psychology, Behavioral Neuroscience; UIUC</li>
+          <li>Emerson Fister (2020–2022) — B.S. Psychology, Behavioral Neuroscience; now Northwestern</li>
+          <li>Ronell Esquivel (2019–2021) — Molecular &amp; Cellular Biology; now Boston University / NIH</li>
+          <li>Aaron Ramasastry (2019–2021) — Psychology</li>
+          <li>Jingqi Zhu (2019–2020) — now University of Michigan</li>
+          <li>Samantha Meissner (2020) — Bioengineering</li>
+          <li>Kayli Hilliard</li>
+          <li>Amba Kapoor</li>
+          <li>Grace Sherman</li>
+          <li>Vanshee Konduru</li>
+          <li>Miaomiao Jin</li>
+          <li>Alexandra Stoica</li>
+          <li>Mia Shripathi</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong>Hinman Lab</strong> · Department of Psychology<br>
+        University of Illinois Urbana-Champaign · 603 East Daniel St, Champaign, IL 61820
+      </div>
+      <div class="foot-links">
+        <a href="mailto:jhinman@illinois.edu">jhinman@illinois.edu</a>
+        <a href="https://scholar.google.com/citations?user=i9rXmWEAAAAJ&hl=en">Google Scholar</a>
+        <a href="https://twitter.com/jake_hinman">@jake_hinman</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
